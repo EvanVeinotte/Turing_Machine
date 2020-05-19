@@ -1,0 +1,9 @@
+//: Counter :
+//: This program starts at zero, and counts up to infinite. (Or at least until it runs out of tape) :
+code:0:
+codeStart:34:
+stateStart:10:
+headStart:34:
+//:
+state[10]:(10,0,1)(10,1,1)(20,=,-1):
+state[20]:(10,1,1)(20,0,-1)(10,1,1):

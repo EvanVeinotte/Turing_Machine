@@ -1,0 +1,8 @@
+//: Bouncer :
+//: This program uses only two states, and bounces the head between the two 1s :
+code:10001:
+stateStart:0:
+codeStart:30:
+headStart:31:
+state[0]:(0,0,1)(1,1,-1)(0,0,1):
+state[1]:(1,0,-1)(0,1,1)(1,1,-1):
