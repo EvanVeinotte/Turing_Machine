@@ -15,4 +15,8 @@ codeStart:16:
 - **codeStart:integer:** The integer value passed through as a parameter will specify at what position on the tape to insert the code. Example: *codeStart:37:*
 - **headStart:integer:** The integer value passed through as a parameter will specify at what position the head of the turing machine will start. Example: *headStart:3:*
 - stateStart:integer: The integer value passed through as a parameter will specify what state the machine will start in. Example: *stateStart:401:*
-- state &#91 :(state_0,write_0,direction_0)(state_1,write_1,direction_1)(state_b,write_b,direction_b): 
+- state\[state_name\]:(state_0,write_0,direction_0)(state_1,write_1,direction_1)(state_b,write_b,direction_b): The state keyword is used to create a state, and then define the actions the head will take for each possible character that the head might read (1, 0 or =).
+  - state_name (integer): The state's id. Other states can will switch over to this state by using this number.
+  - state_0 (integer): This is the state that the machine will switch to next step if the head reads a 0 on the tape.
+  - write_0 (char 0,1 or =): This is the value that will be written onto the tape this step if the head reads a 0 on the tape.
+  - direction_0 (1 or -1): This value determines which direction the head will move next step (1 is right and -1 is left).
