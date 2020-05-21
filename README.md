@@ -7,4 +7,12 @@ A turing machine is a type of computer, theorised by Alan Turing in 1936. Althou
 The turing machine will run whatever code is in the code.vno file. If you run the turing executable, a console window will pop up with a simulation of the machine. To advance onto the next step, press the enter key. You can hold the enter key to advance through the steps quickly. You can also enter a 'q' into the input field, which will terminate the program.
 ## How to write your own code
 ### Code Structure:
-[operation keyword]:[parameters]:
+operation_keyword:parameters:
+For example:
+codeStart:16:
+### List of operation keywords:
+- code:string: Takes a string of 1s, 0s and =s as a parameter (no quotation marks). Whatever is passed through as a parameter will be inserted onto the tape and will act as the "program" for your turing machine. Example: </b>code:100101=010=110:</b>
+- codeStart:integer: The integer value passed through as a parameter will specify at what position on the tape to insert the code.
+- headStart:integer: The integer value passed through as a parameter will specify at what position the head of the turing machine will start.
+- stateStart:integer: The integer value passed through as a parameter will specify what state the machine will start in.
+- state:(state_0,write_0,direction_0)(state_1,write_1,direction_1)(state_b,write_b,direction_b): 
