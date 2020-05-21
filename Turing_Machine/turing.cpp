@@ -11,6 +11,8 @@
 #include <string.h>
 using namespace std;
 
+//maximum amount of states that can be created
+const int MAX_STATES = 1000;
 //maximum amount of individual values to be decoded from a string of code
 const int TOKEN_LENGTH_MAX = 11;
 //length of the turing tape
@@ -37,7 +39,7 @@ struct State{
 };
 
 //array of states
-State statearray[1000];
+State statearray[MAX_STATES];
 //the string written in the code file that represents the code to be placed onto the tape
 string TapeCode;
 //this number represents where to position to insert the turing code
