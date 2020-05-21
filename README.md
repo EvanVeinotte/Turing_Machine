@@ -11,8 +11,8 @@ operation_keyword:parameters:
 For example:
 codeStart:16:
 ### List of operation keywords:
-- code:string: Takes a string of 1s, 0s and =s as a parameter (no quotation marks). Whatever is passed through as a parameter will be inserted onto the tape and will act as the "program" for your turing machine. Example: </b>code:100101=010=110:</b>
-- codeStart:integer: The integer value passed through as a parameter will specify at what position on the tape to insert the code.
-- headStart:integer: The integer value passed through as a parameter will specify at what position the head of the turing machine will start.
-- stateStart:integer: The integer value passed through as a parameter will specify what state the machine will start in.
-- state:(state_0,write_0,direction_0)(state_1,write_1,direction_1)(state_b,write_b,direction_b): 
+- **code:string:** Takes a string of 1s, 0s and =s as a parameter (no quotation marks). Whatever is passed through as a parameter will be inserted onto the tape and will act as the "program" for your turing machine. Example: *code:100101=010=110:*
+- **codeStart:integer:** The integer value passed through as a parameter will specify at what position on the tape to insert the code. Example: *codeStart:37:*
+- **headStart:integer:** The integer value passed through as a parameter will specify at what position the head of the turing machine will start. Example: *headStart:3:*
+- stateStart:integer: The integer value passed through as a parameter will specify what state the machine will start in. Example: *stateStart:401:*
+- state &#91 :(state_0,write_0,direction_0)(state_1,write_1,direction_1)(state_b,write_b,direction_b): 
