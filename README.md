@@ -25,7 +25,7 @@ codeStart:16:
   - direction_1 (1 or -1): This value determines which direction the head will move next step when the head reads a 0 on the tape.(1 is right and -1 is left).
   - state_b (integer): This is the state that the machine will switch to next step if the head reads a =(blank) on the tape.
   - write_b (char 0,1 or =): This is the value that will be written onto the tape this step if the head reads a =(blank) on the tape.
-  - direction_1 (1 or -1): This value determines which direction the head will move next step when the head reads a =(blank) on the tape.(1 is right and -1 is left).
+  - direction_b (1 or -1): This value determines which direction the head will move next step when the head reads a =(blank) on the tape.(1 is right and -1 is left).
 #### See the example programs in the Programs file for more examples.
 ## Machine Limitations:
 The machine is set to only create states between 0 and 999. However, this could easily be changed by changing the MAX_STATES variable in the source code. Also, the cpp file will currently only run in windows, but this could also be easily changed by just changing the system("CLS") and system("PAUSE") to whatever will work on your system.
